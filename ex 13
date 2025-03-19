@@ -2,10 +2,7 @@
 três lidos. O que acontece se o seu programa tiver lido dois ou mais números iguais
 (Ex.: 1, 1, 3)?'''
 
-a_str, b_str, c_str = input("Insira 3 valores: ").split( )
-a = int(a_str)
-b = int(b_str)
-c = int(c_str)
+a, b, c = input("Insira 3 valores: ").split( )
 Lista_num = [a, b, c]
 
 menor = min(Lista_num)
