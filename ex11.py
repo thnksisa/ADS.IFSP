@@ -1,12 +1,8 @@
 '''11. Elabore um programa que dado o peso de um boxeador, informe à categoria a qual
 pertence, seguindo a tabela abaixo.'''
 
-#definição das variáveis
-
 peso_str = input("Informe seu peso em kg: ")
 peso=int(peso_str)
-
-#comandos para determinar a categoria
 
 if peso <50:
     print("Você é da categoria palha!")
