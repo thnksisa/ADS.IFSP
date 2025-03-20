@@ -12,7 +12,9 @@ tempo_str = input("Insira seu tempo de colaboração em anos: ")
 sexo_str = input("Indique seu sexo como M (masculino) ou F (feminino): ")
 tempo = int(tempo_str)
 
-if tempo >15 and sexo_str == "M" or sexo_str == "m":
+if sexo_str != "M" or "m" or "F" or "f":
+ print("Insira um sexo valido")
+elif tempo >15 and sexo_str == "M" or sexo_str == "m":
  print("Você tem direito a 15% de bônus!")
 elif tempo >10 and sexo_str == "F" or sexo_str == "f":
  print("Você tem direito a 25% de bônus!")
