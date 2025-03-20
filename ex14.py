@@ -6,7 +6,9 @@ print("Escolha entre pedra, papel ou tesoura")
 a = input("Jogador A, insira sua jogada: ")
 b = input("Jogador B, insira sua jogada: ")
 
-if a == b:
+if a or b != "pedra" or "papel" or "tesoura":
+    print("Insira jogadas validas")
+elif a == b:
     print("Empatou!")
 elif a == "papel":
     if b == "tesoura":
@@ -23,4 +25,3 @@ elif a == "tesoura":
         print("Pedra quebra tesoura, jogador B ganhou!")
     else:
         print("Tesoura corta papel, jogador A ganhou!")
-        
