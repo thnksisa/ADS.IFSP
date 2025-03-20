@@ -14,47 +14,28 @@ ______Moeda______|___Valor_(R$)__|
 '''
 
 # Inserção de Dados
-moeda_ini = input("Digite a moeda de partida em maiúscula (D = dol, E = euro, L = libra, Y = yuan): ")
-moeda_prox = input("Digite a moeda para conversão em maiúscula (D = dol, E = euro, L = libra, Y = yuan): ")
-valor = float(input("Digite o valor a ser convertido na moeda de partida: "))
+moeda_conv = input("Digite a moeda de partida em maiúscula (d = dol, e = euro, l = libra, y = yuan): ")
+valor = float(input("Digite o valor em reais a ser convertido: "))
 conversao = 0.0
+moeda = ''
 
-# Conversão de moedas
-dol_euro = 4.095/3.258
-dol_lib = 4.529/3.258
-dol_yuan = 0.515/3.258
-euro_lib = 4.529/4.095
-euro_yuan = 0.515/4.095
-lib_yuan = 4.529/0.515
+# Conversões
+dolar = 3.258
+euro = 4.095
+libra = 4.529
+yuan = 0.515
 
-# Conversao entre moedas:
-if moeda_ini == 'D':
-     if moeda_prox == 'E':
-        conversao = valor*dol_euro
-     elif moeda_prox == 'L':
-         conversao = valor*dol_lib
-     else:
-         conversao = valor*dol_yuan
-elif moeda_ini == 'E':
-     if moeda_prox == 'D':
-         conversao = valor/dol_euro
-     elif moeda_prox == 'L':
-         conversao = valor*euro_lib
-     else:
-         conversao = valor*euro_yuan
-elif moeda_ini == 'L':
-     if moeda_prox == 'D':
-         conversao = valor/dol_lib
-     elif moeda_prox == 'E':
-         conversao = valor/euro_lib
-     else:
-         conversao = valor*lib_yuan
+if moeda_conv == 'd':
+    conversao = valor*dolar
+    moeda = 'dólares'
+elif moeda_conv == 'e':
+    conversao = valor*euro
+    moeda = 'euros'
+elif moeda_conv == 'l':
+    conversao = valor*libra
+    moeda = 'libras esterlinas'
 else:
-     if moeda_prox == 'D':
-         conversao = valor/dol_yuan
-     elif moeda_prox == 'E':
-         conversao = valor/euro_yuan
-     else:
-         conversao = valor/lib_yuan
+    conversao = valor*yuan
+    moeda = 'yuans'
 
-print("A conversão obtida é a de: ", conversao,".")
+print("O valor de ",valor," em ",moeda,"será de: ",conversao)
