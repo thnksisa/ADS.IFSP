@@ -1,0 +1,10 @@
+data1 = input("Digite uma data (dd/mm/aaaa): ")
+data2 = input("Digite outra data (dd/mm/aaaa): ")
+
+dia1, mes1, ano1 = map(int, data1.split("/"))
+dia2, mes2, ano2 = map(int, data2.split("/"))
+
+if (ano1 > ano2) or (ano1 == ano2 and mes1 > mes2) or (ano1 == ano2 and mes1 == mes2 and dia1 > dia2):
+    print("A primeira data é mais nova.")
+else:
+    print("A segunda data é mais nova.")
