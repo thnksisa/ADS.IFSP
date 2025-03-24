@@ -12,6 +12,6 @@ elif peso >=59 and peso <75:
     print("Você é da categoria leve!")
 elif peso >=75 and peso <87:
     print("Você é da categoria pesado!")
-elif peso >=87:
+else:
     print("Você é da categoria super pesado!")
 
