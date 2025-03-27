@@ -1,3 +1,8 @@
+'''Escreva um programa que, dadas duas datas, determine qual delas ocorreu
+cronologicamente primeiro. Para cada uma das duas datas, leia três números
+referentes ao dia, mês e ano, respectivamente.'''
+
+
 data1 = input("Digite uma data (dd/mm/aaaa): ")
 data2 = input("Digite outra data (dd/mm/aaaa): ")
 
