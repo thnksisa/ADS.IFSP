@@ -11,7 +11,7 @@ desconto.'''
 Compras = int(input("Digite quanto voce gastou:$ "))
 Vale_desconto = 10
 
-if Compras == 100:
+if Compras <= 100:
     print("Voce ganhou um cupom para concorrer um carro")
 else:
     Compras > 100
