@@ -17,3 +17,6 @@ else:
     Compras > 100
     desconto = ( Vale_desconto / 100) * Compras
     print(f"Voce ganhou dois cupons para concorrer a um carro, e um desconto no valor de {desconto:.2f}%")
+
+
+'''Var compras, detecta o quanto foi gasto, sendo digitado e atribui o desconto nas variaveis, com base no gasto'''
