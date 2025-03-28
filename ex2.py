@@ -18,3 +18,6 @@ if renda_anual > renda_maxima:
    print(f"Sua renda anual foi {renda_anual:.2f},voce está apto para pagar imposto esse ano,seu desconto de aliquota desse ano é {deconto_aliquota:.2f}")
 else:
    print(f"Sua renda anual foi {renda_anual:.2f},voce está inapto para pagar imposto esse ano")
+
+
+''' Var atribuidas com valores no anuncia, com o calculo sendo feito com base na renda mensal e atribuido o desconto de aliquota, com a informação de renda anual''' 
