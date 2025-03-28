@@ -13,3 +13,6 @@ if (ano1 > ano2) or (ano1 == ano2 and mes1 > mes2) or (ano1 == ano2 and mes1 == 
     print("A primeira data é mais nova.")
 else:
     print("A segunda data é mais nova.")
+
+
+'''comando reconhece datas, com a seperação em split, sendo atribuida em ordem de dia/mes/ano, após isto entra em if else para comparar qual é mais nova'''
