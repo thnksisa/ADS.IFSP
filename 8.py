@@ -14,7 +14,9 @@ ano = int(input("➔ "))
 
 idade = ANO_ATUAL - ano
 
-if idade >= LIMITE_MAIOR:
+if idade < 0:
+    print("Não existe idade negativa.") 
+elif idade >= LIMITE_MAIOR:
     print("Você é maior de idade.")
 else:
     print("Você é menor de idade.")
