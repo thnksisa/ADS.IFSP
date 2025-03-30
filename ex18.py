@@ -25,6 +25,7 @@ else:
 if peso_atual > peso_ideal + 40:
     print("A pessoa indicada está com obesidade.")
 elif peso_atual < peso_ideal:
+    # nesse caso, qualquer valor de peso abaixo do ideal é considerado abaixo do peso.
     print("A pessoa está abaixo do peso ideal.")
 else:
     print("A pessoa está no peso ideal.")
