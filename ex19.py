@@ -14,11 +14,14 @@ salario = float(input("Digite o valor de seu salário atual: "))
 # Classificação do novo salário
 if cargo == 't':
     salario = salario*1.3
+    # atualiza o salário para 130% do valor original, ou seja, aumento de 30%
     print("O novo salário de técnico será: ",salario)
 elif cargo == 'g':
     salario = salario*1.2
+    # atualiza para 120%, aumento de 20%
     print("O novo salário de gerente será: ",salario)
 else:
     salario = salario*1.15
+    # atualiza para 115%, aumento de 15%
     print("O novo salário para os demais funcionários será: ",salario)
 
