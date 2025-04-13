@@ -1,20 +1,18 @@
-''''Faça um programa que lê um caracter do teclado e imprima se o caracter é uma letra.
-Se for, deve imprimir se a letra em questão é maiúscula ou minúscula. Dica: use os
-códigos ASCII das letras para resolver este problema.'''
+'''
+A convenção de graus Fahrenheit para Celsius é obtida pela fórmula C = 5. (F - 32)/9.
+Escreva um programa que calcule e imprima uma tabela de graus centígrados em
+função de graus Fahrenheit que variem de 50 a 150 de 5 em 5. Utilize constantes
+simbólicas para indicar o início (50) e o fim (150) do intervalo, além do passo (5);
+'''
 
+f_input = float(input("Informe uma temperatura em Fahrenheit: "))
+c_input = 5 * (f_input - 32) / 9
+print(f"{f_input}°F equivale a {c_input:.2f}°C\n")
 
-letra = (input("Escreva uma letra: "))
+print("Tabela de conversão:")
+print("Fahrenheit  |  Celsius")
+print("------------------------")
 
-
-if letra.isupper():
-        print(f"A letra {letra} é maiuscula")
-elif letra.islower():
-        print(f"A letra {letra} é minuscula")
-else: 
-        letra == int
-        print("É um número não uma letra: ")
-
-#Comando letra detecta qual é variavel e escrita e replica nas condicionais, para imprimir se é maiuscula ou minuscula, porém se for número, exibira a mensagem final
-
-
-
+for f in range(50, 151, 5):
+    c = 5 * (f - 32) / 9
+    print(f"{f:^11} | {c:^8.2f}")
